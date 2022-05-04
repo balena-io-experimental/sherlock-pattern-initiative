@@ -7,3 +7,12 @@
 
 # sherlock-pattern-initiative
 Umbrella for different diagnostics, symptoms and pattern transformers
+
+# Sherlock Pattern Process
+
+## Logfile / Diagnostics translation
+Translating diagnostics outputs or logfiles into structured diagnostics JSON files
+
+## Matching / Checking Symptoms for patterns
+
+A symptom parser matches symptom rules (regex, regexmatch, ...) according to [formulajs](https://github.com/formulajs/formulajs) by utilisting the [jellyscript](https://github.com/product-os/jellyfish-jellyscript) parser.
