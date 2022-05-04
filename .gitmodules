@@ -1,0 +1,6 @@
+[submodule "diagnostics-to-json"]
+	path = diagnostics-to-json
+	url = git@github.com:balena-io-playground/diagnostics-to-json.git
+[submodule "diagnostics-json-to-patterns-json"]
+	path = diagnostics-json-to-patterns-json
+	url = git@github.com:balena-io-playground/diagnostics-json-to-patterns-json.git
