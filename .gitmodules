@@ -4,3 +4,6 @@
 [submodule "diagnostics-json-to-patterns-json"]
 	path = diagnostics-json-to-patterns-json
 	url = git@github.com:balena-io-playground/diagnostics-json-to-patterns-json.git
+[submodule "patterns-json-to-jellyfish"]
+	path = patterns-json-to-jellyfish
+	url = git@github.com:balena-io-playground/patterns-json-to-jellyfish.git
