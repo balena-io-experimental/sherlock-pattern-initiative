@@ -23,6 +23,12 @@ The diagnostics-to-json transformer translates device diagnostics output or logf
 
 The diagnostics-json-to-patterns-json symptom parser matches symptom rules (regex, regexmatch, ...) according to [formulajs](https://github.com/formulajs/formulajs) by utilisting the [jellyscript](https://github.com/product-os/jellyfish-jellyscript) parser.
 
-![x1](https://github.com/balena-io-playground/sherlock-pattern-initiative/blob/master/images/transformer-2.png)
+![x2](https://github.com/balena-io-playground/sherlock-pattern-initiative/blob/master/images/transformer-2.png)
 
 The "symptom rules" are contained in "pattern files" that reside in the input folder for this transformer. When a diagnostics json file is fed into the parser, it attempts to match the set of symptoms in each pattern file. If all symptom combinations for the pattern are met (multiple symptoms can be matched using and, or, not) then the pattern is considered to be detected in the inputted diagnostics file.
+
+## Pattern Json to jellyfish updater
+
+This transformer takes the output of transformer #2 (a json file containing patterns that were matched to symptoms in a diagnostics file) along with a support thread slug/permalink in a config.json file as inputs. It then attaches the patterns to the given support thread.
+
+![x3](https://github.com/balena-io-playground/sherlock-pattern-initiative/blob/master/images/transformer-3.png)
